@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <TableLayout
+        android:id="@+id/tbSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tvDayPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day/Period"
+                style="@style/heading_style"/>
+
+            <TextView
+                android:id="@+id/tvMorning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Morning"
+                style="@style/heading_style"
+                />
+
+            <TextView
+                android:id="@+id/tvAfternoon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Afternoon"
+                style="@style/heading_style" />
+            <TextView
+                android:id="@+id/tvEvening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tvEvening"
+                style="@style/heading_style" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tvMonday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                style="@style/heading_style"
+                />
+
+            <TextView
+                android:id="@+id/tvMondayMorning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="....."
+                style="@style/data_style"
+
+                />
+
+            <TextView
+                android:id="@+id/tvMondayAfterEvening"
+                style="@style/data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:text="......" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tvTuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                style="@style/heading_style"/>
+
+            <TextView
+                android:id="@+id/tvTuesdayMornAfter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="......"
+                style="@style/data_style"
+                android:layout_span="2"
+                />
+
+            <TextView
+                android:id="@+id/tvTuesdayEvenig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="......."
+                style="@style/data_style"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
